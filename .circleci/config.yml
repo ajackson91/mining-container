@@ -6,8 +6,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Build Docker image
+          name: "Build Docker image"
           command: echo ToDo: Build Docker image.
       - run:
-          name: Publish Docker image to Docker Hub
+          name: "Publish Docker image to Docker Hub"
           command: echo ToDo: Publish Docker image to Docker Hub.
