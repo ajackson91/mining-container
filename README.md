@@ -9,7 +9,7 @@ docker build -t ajackson/mining-container:latest .
 ## Starting Container
 
 ```
-run --name <container name> -e POOL='<pool details>' -e ACCOUNT='<account details>' -e AESNI=[enabled|disabled] -v <local log directory>:/opt/mining-container/logs -d -it ajackson/mining-container:latest
+docker run --name <container name> -e POOL='<pool details>' -e ACCOUNT='<account details>' -e AESNI=[enabled|disabled] -v <local log directory>:/opt/mining-container/logs -d -it ajackson/mining-container:latest
 ```
 
 Note: If you don't specify all environment variables it will default to my personal account.
